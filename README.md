@@ -1,4 +1,4 @@
-# LeRobot GitHub Upload README
+# README
 
 ## Purpose
 
