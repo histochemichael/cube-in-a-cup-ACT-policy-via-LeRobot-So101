@@ -169,7 +169,7 @@ Test command used for this project:
 ```powershell
 cd C:\Users\Owner\lerobot
 conda activate lerobot
-python examples\rtc\eval_with_real_robot.py --policy.path=C:\Users\Owner\act_runs\so101_block_into_cup_run1\checkpoints\012000\pretrained_model --policy.device=cuda --rtc.enabled=false --robot.type=so101_follower --robot.port=COM4 --robot.id=so101_follower --robot.max_relative_target=10 --robot.cameras="{wrist: {type: opencv, index_or_path: 0, width: 1280, height: 800, fps: 30}, top: {type: opencv, index_or_path: 1, width: 1280, height: 720, fps: 30}}" --task="Put the block into the cup" --duration=60 --fps=10
+lerobot-record --robot.type=so101_follower --robot.port=COM4 --robot.id=so101_follower --robot.max_relative_target=10 --robot.cameras="{wrist: {type: opencv, index_or_path: 0, width: 1280, height: 800, fps: 30}, top: {type: opencv, index_or_path: 1, width: 1280, height: 720, fps: 30}}" --dataset.repo_id=Histochemichael/eval_so101_block_into_cup_012000 --dataset.root=C:\Users\Owner\lerobot_eval --dataset.single_task="Put the block into the cup" --dataset.num_episodes=1 --dataset.episode_time_s=60 --dataset.reset_time_s=0 --dataset.push_to_hub=false --dataset.video=true --dataset.vcodec=h264 --policy.path=C:\Users\Owner\act_runs\so101_block_into_cup_run1\checkpoints\012000\pretrained_model --policy.device=cuda --display_data=true
 ```
 
 Recorded robot/camera setup used for testing:
